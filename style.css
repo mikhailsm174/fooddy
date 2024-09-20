@@ -58,9 +58,7 @@ body{
 	color: #FDA403;
 	background-color: red;
 }
-/*#menu-check{
-	display: none;
-}*/
+
 .menu-button{
 	position: relative;
 	left: 90%;
@@ -97,12 +95,6 @@ body{
 	opacity: 0;
 }
 
-/*.menu-button:checked ~ .navbar-ul{
-		top: 100%;
-		opacity: 1;
-		visibility: visible;
-	}*/
-
 /*==========================================*/
 
 @media (max-width: 960px){
@@ -111,9 +103,11 @@ body{
 	}
 	.navbar .navbar-ul{
 		opacity: 0;
+        visibility: hidden;
 		position: absolute;
-		left: -100%;
+		top: 200px;
 		transition: transform .5s else;
+        transition: all .3s;
 	}
 
 	.navbar .navbar-ul.navbar-ul-small{
@@ -127,7 +121,6 @@ body{
 		line-height: 40px;
 		visibility: visible;
 		padding-left: 0;
-		
 		position: absolute;
 		left: 0;
 	}
